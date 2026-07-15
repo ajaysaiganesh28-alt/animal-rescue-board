@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f6f5;
+  color: #222;
+}
+
+.navbar {
+  background: #2c7a4b;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.nav-buttons button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 14px;
+  margin-left: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-buttons button.active {
+  background: white;
+  color: #2c7a4b;
+  font-weight: bold;
+}
+
+.main-content {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.filter-bar {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.request-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.request-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.request-body {
+  padding: 14px;
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.request-desc {
+  margin: 8px 0;
+}
+
+.request-meta {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+.claimed-info {
+  font-size: 0.85rem;
+  color: #2c7a4b;
+  font-weight: 600;
+}
+
+.card-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-actions button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #2c7a4b;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.delete-btn {
+  background: #c0392b !important;
+}
+
+.claim-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.claim-form input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.request-form {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.request-form label {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.request-form input,
+.request-form textarea,
+.request-form select {
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.primary-btn {
+  margin-top: 20px;
+  background: #2c7a4b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.secondary-btn {
+  margin-top: 8px;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.coords-text {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.error-text {
+  color: #c0392b;
+  font-weight: 600;
+}
